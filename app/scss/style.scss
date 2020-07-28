@@ -1,3 +1,15 @@
+@font-face {
+  font-family: 'Tahu!';
+  src: url('../fonts/Tahu.woff2') format('woff2'),
+      url('../fonts/Tahu.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+
 html {
   box-sizing: border-box;
 }
@@ -8,6 +20,58 @@ html {
   box-sizing: inherit;
 }
 
-.box {
-  display: flex;
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #282828;
+  font-weight: 400;
+  font-size: 20px;
+}
+.container {
+  max-width: 1330px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  &__inner {
+    padding-top: 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__item {
+    display: inline-block;
+    margin-right: 60px;
+  }
+  &__link {
+    color: #282828;
+    text-decoration: none;
+  }
+}
+
+.parallax-container {
+  
+  width: 100%;
+  min-height: 778px;
+  overflow: hidden;
+  background-image: url(../images/orange-circle.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
